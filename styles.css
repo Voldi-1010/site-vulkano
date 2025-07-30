@@ -1,0 +1,822 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wdth,wght@75..100,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+
+/*- Загальні стилі*/
+body {
+    background-color: black;
+    color: #fff;
+    font-family: "Matilda", "Tomato", sans-serif;
+}
+@font-face {
+    font-family: "Matilda";
+    src: url("./style/Matilda.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+/*- Шапка*/
+.header {
+    padding: 25px 0;
+    justify-content:space-around;
+    align-items: start;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .btns {
+    opacity: 1;
+}
+
+.header_logo {
+    transform: scale(0.8);
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;  
+}
+
+h2 {
+    font-family: 'Matilda', 'Arial', sans-serif;
+    text-transform: uppercase;
+}
+
+.order_body {
+    display: flex;
+    height: 100hv;
+}
+.order_body .btns{
+    margin: 50px 10px;
+
+}
+.order_title {
+    color: #fff;
+    text-align: center;
+}
+.order_total {
+    font-family: "Roboto";
+    background: #4e4f4e;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-top: 100px;
+}
+.prices {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: 700;
+}
+.prices_btns {
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    transition: opacity 1.9s;  
+    background: #d4f807;
+}
+.prices_btns:hover {
+    opacity: 1;
+    text-shadow:1px 1px 2px red,
+                0 0 1em blue,
+                0 0 0.2em blue;;
+}
+.product_item {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.product_list {
+    max-width: 600px;
+}
+
+.cart {
+    font-family: "Roboto";
+    background: #201f1f;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    padding-left: 40px;
+}
+
+.pool h2 {
+    text-align: center;
+}
+.ordrs {
+    display: flex;
+        /* justify-content:end;
+        align-items: end; */
+    
+}
+
+.pool {
+    display: flex;
+}
+
+.btns {
+    display: flex;
+    font-family: 'Matilda';
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    background-color:rgb(247, 91, 7);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    transition: opacity 1.9s;  
+}
+
+.btns:hover {
+    opacity: 1; 
+    background-color: rgb(247, 53, 10);  
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    font-family: "Roboto";
+}
+
+.navigator a {
+    color: rgb(255, 0, 0);
+    opacity: 0.5;
+    font-weight: 700;
+    -webkit-text-stroke: 0.3px white;
+    transition: opacity 1.9s;
+}
+.navigator a:hover {
+    opacity: 1;
+}
+
+.navigator a.active {
+    color: white;
+    opacity: 1;
+}
+
+.lists {
+    display: flex;
+    gap: 30px;
+}
+
+h1 {
+    font-family: "Roboto";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 90;
+}
+
+/*- Привітальна секція*/
+
+.velcom {
+    background-image: url("./img/pitsa2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -100px;
+    padding: 440px 0;
+    margin-top: -150px;
+    margin-left: -10px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Dancing Script", cursive;
+    margin: 0;
+}
+
+.newTodo {
+    border-radius: 3px;
+    background: #969595;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+.welcom_text {
+    width: 550px;
+}
+
+.welcome_title {   
+    align-items: center; 
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px 0 rgb(253, 253, 253),
+               -1px 1px 0 rgb(252, 251, 251),
+               1px -1px 0 rgb(252, 251, 251),
+               -1px -1px 0 rgb(250, 248, 248);
+}
+
+.welcom_uptitle {
+    margin:0;
+    padding: 0;
+    color: rgb(190, 1, 1);
+    font-size: 58px;
+    text-shadow: 1px 1px 0 rgb(253, 253, 253),
+               -1px 1px 0 rgb(252, 251, 251),
+               1px -1px 0 rgb(252, 251, 251),
+               -1px -1px 0 rgb(250, 248, 248);
+}
+
+.welcom_desk {
+    margin: 40px 0;
+    color: red; 
+}
+
+/*Асортимент*/
+
+.food-list {
+    padding: 100px 0;
+}
+
+.food-list .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.food-list_card {
+    width: 270px;
+    background: #252525;
+    border-radius: 10px;
+    overflow: hidden;    
+}
+
+.food-list_img {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.food-list_title {
+    text-align: center;
+}
+
+.food-list_desk {
+    padding: 0 20px;
+    text-indent: 10px;
+    opacity: 0.8;
+}
+
+/* Замовлення*/
+
+.order {
+    padding: 60px 0;
+}
+
+.order .container {
+    display: flex;
+    align-items: center;
+}
+
+.order_pitsa {
+    width: 450px;
+    height: 450px;
+}
+
+.order_text {
+    padding: 60px;
+}
+
+.order_title {
+    font-family: "Matilda", serif;
+    color: rgb(190, 1, 1);
+    font-size: 78px;
+    text-shadow: 1px 1px 0 rgb(253, 253, 253),
+               -1px 1px 0 rgb(252, 251, 251),
+               1px -1px 0 rgb(252, 251, 251),
+               -1px -1px 0 rgb(250, 248, 248);
+}
+
+.order_desc {
+    text-indent: 10px;
+    max-width: 80%;
+}
+
+.order_price {
+    font-size: 40px;
+    font-family: "Meie+Script", cursive;   
+}
+
+.order_old_price {
+    font-size: 30px;
+    font-family: "Meie+Script", cursive;
+    text-decoration: line-through;
+    color: rgb(249, 80, 80);
+    opacity: 0.5;
+    margin-left: 10px;   
+}
+
+.order .btns {
+    margin-top: 20px;
+}
+
+/* Продукція*/
+
+.product {
+    padding: 150px 0;      
+}
+
+.product .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items:center;
+    gap: 30px;   
+}
+
+.product_card {
+    background-position: center;
+    box-sizing: border-box;
+    width: 555px;
+    height: 400px;
+    padding-left:  270px;
+    padding-right: 10px;
+    padding-top: 40px;    
+}
+
+.product_card:nth-child(even) {
+    padding-left: 30px;
+    padding-right: 290px;    
+}
+
+
+
+.product_title {
+    font-size: 30px;    
+}
+
+.product_desc {
+    text-indent: 10px;
+}
+
+.product_price {
+    font-size: 30px;
+    font-family: "Meie+Script", cursive;   
+}
+
+.product_old_price {
+    font-size: 20px;
+    font-family: "Meie+Script", cursive;
+    text-decoration: line-through;
+    color: rgb(249, 80, 80);
+    opacity: 0.5;
+    margin-left: 10px;
+    margin-bottom: 10px;   
+}
+
+.product .btns {
+    margin-top: 20px;
+}
+
+.card_cupp {
+    background-image: url("./img/cuppuch.jpg");
+    background-position: right;
+}
+
+.card_burg {
+    background-image: url("./img/burgers.jpg");
+    background-position: left 95% bottom 100%;   
+}
+
+.card_suhs {
+    background-image: url("./img/sushi.jpg");
+    background-position: right;
+}
+
+.card_piza {
+    background-image: url("./img/pizza-cheese.jpg");
+    background-position: left;
+}
+
+/* Замовники*/
+
+.feedback .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: scale(0.7);
+}
+
+.feedback_img {
+    display: grid;
+    grid: repeat(2, 260px) / auto-flow;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.feedback_img1 {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 70px 10px 10px 40px;
+}
+
+.feedback_img2 {
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    margin: 60px 10px 10px 65px;
+}
+
+.feedback_img3 {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin: 10px 20px 40px 15px;
+}
+
+.feedback_img4 {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 30px 15px 20px 75px;
+}
+
+.feedback_img5 {
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    margin: 10px;
+}
+
+.feedback_text {
+    width: 500px;
+    height: 600px;
+    text-align: center;  
+}
+
+.feedback_title {
+    font-size: 400px;
+    font-family: "Matilda", cursive;
+    color: rgb(247, 91, 7);
+    margin-bottom: -300px;
+    overflow: hidden;
+}    
+
+.feedback_desk {
+    font-family: "Tomato";
+    opacity: 0.6;
+    font-size: 20px;
+}
+
+.feedback_autor {   
+    font-family: "Tomato";
+    font-size: 45px;
+}
+
+/*Меню*/
+
+.download .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 60px;    
+}
+
+.download_title {
+    font-family: "Meie+Script", cursive;
+    font-size: 35px;
+}
+
+.download .btns {
+    width: 200px;
+    font-family: "Tomato";
+}
+
+/*Підвал*/
+
+.footer {
+    padding-top: 120px;
+}
+
+.footer .container{
+    display: flex;
+}
+
+.footer_logo {
+    border-radius: 50%;
+    transform: scale(0.8);
+}
+
+.container .footer_contacts a {
+    display: flex;
+    align-items: center;    
+}
+
+.footer_link + .footer_link {
+    margin-top: 10px;
+}
+
+.footer_link_mail::before {
+    content: url("./img/icons/mailto.png");
+    padding-right: 7px;
+}
+
+.footer_link_web::before {
+    content: url("./img/icons/webs.png");
+    padding-right: 7px;
+}
+
+.footer_contacts {
+    width: 250px;
+}
+
+.footer_link {
+    font-family: "Tomato";
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.footer_link:hover {
+    transition: 1s;
+    opacity: 1;
+    text-shadow: 1px 1px 2px rgb(250, 113, 113),
+  0 0 1em rgb(102, 102, 249),
+  0 0 0.2em rgb(182, 182, 251);
+}
+
+.footer_nav  {  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer_nav .footer_iner_list {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.footer_list_link {
+    font-family: "Tomato";
+    font-size: 20px;
+    font-weight: 700; 
+}
+
+.footer_list_link:hover {
+    color: burlywood;
+    transition: 1s;
+}
+
+.footer_list_item {
+    font-family: "Tomato", cursive;
+    font-size: 14px;
+    opacity: 0.8;  
+}
+
+.footer_list_item:hover {
+    transition: 1s;
+    opacity: 1;
+    text-shadow: 1px 1px 2px rgb(250, 113, 113),
+  0 0 1em rgb(102, 102, 249),
+  0 0 0.2em rgb(182, 182, 251);
+}
+
+.footer_list_items {
+    padding-bottom: 20px;
+}
+
+.footer_list_item + .footer_list_item {
+    margin-top: 10px;
+}
+
+.footer_cocial_icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.footer_facebook:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+.footer_instagram:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+.footer_linkedin:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+.footer_viber:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+.footer_row {
+    margin-top: 60px;
+}
+
+/*Мобільна адаптація під шириною 1140 пікселів */
+
+@media (max-width: 1140px) {
+    .btns {
+        display: flex;
+        font-family: 'Matilda';
+        color: #fff;
+        width: 150px;
+        height: 50px;
+        background-color:rgb(247, 91, 7);
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        text-transform: uppercase;
+        opacity: 1; 
+}
+    .velcom {
+        padding: 0;
+        padding-top: 300px;
+    }
+    .food-list {
+        padding: 0;
+    }
+    
+    .food-list_card {
+        margin-bottom: 20px;
+    }
+    .food-list .container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 5px;
+        max-width: 600px;
+    }
+
+    .product .container {
+        gap: 20px; 
+    }
+
+    .product_card {
+        background-position: center;
+        box-sizing: border-box;
+        width: 500px;
+        height: 350px;
+        padding-left:  270px;
+        padding-right: 10px;
+        padding-top: 10px;    
+    }
+    .product_card:nth-child(even) {
+        padding-left: 30px;
+        padding-right: 290px;
+        padding-top: 5px;    
+    }
+    .product .btns {
+        position: bottom;
+    }
+    .product_desc {
+        text-indent: 10px;
+        width: 250px;
+        margin-left: -20px;
+    }
+  
+    .download .btns {
+        transform: scale(0.8);
+    }
+    .feedback_text {
+        width: 200px;
+    }
+   
+}
+
+@media (max-width: 1040px) {
+   
+    .product .container {
+        gap: 10px; 
+    }
+    .product_card {
+        transform: scale(0.9);
+    }
+  
+    .card_suhs .product_old_price {
+        font-size: 18px;
+        margin: 0;
+    }
+    .footer_contacts {
+        transform: scale(0.8);
+    }
+    .footer_nav {
+        transform: scale(0.8);
+    }
+    .footer_social {
+       transform: scale(0.8);
+       padding-right: 60px;
+    }
+    .product_card .card_cupp {
+        margin-left: 50px;
+    }
+    .download_title {
+        width: 450px;
+        text-align: center;
+    }
+ 
+}
+
+@media (max-width: 970px) {
+    .product .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 240px;
+    }
+    .velcom {
+        background-position-x: -200px;
+    }
+    .order_old_price {
+        font-size: 20px;
+    }
+    
+}
+
+@media (max-width: 805px) {
+    .velcom {
+        background-position-x: -100px;
+        padding-bottom: 20px;
+    }
+    .order {
+        transform: scale(0.8);
+        padding: 0;
+        margin-left: -60px;
+    }
+    .product {
+        margin-left: -100px;
+    }
+    .feedback_img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "feedback_img1 feedback_img3"
+                              "feedback_img5 feedback_img5"
+                              "feedback_img2 feedback_img4";
+        align-items: end;                      
+        width: 600px;
+        height: 1000px;
+        overflow: hidden;
+    }
+    .feedback_img1 {
+        grid-area: feedback_img1;
+    }
+    .feedback_img2 {
+        grid-area: feedback_img2;
+    }
+    .feedback_img3 {
+        grid-area: feedback_img3;
+    }
+    .feedback_img4 {
+        grid-area: feedback_img4;
+    }
+    .feedback_img5 {
+        justify-self: end;
+    }
+    .product {
+        padding: 0;
+    }
+    .lists {
+        padding: 0 20px;
+    }
+    .feedback_text {
+        width: 300px;
+    }
+    .footer {
+        padding: 0;
+    }
+    .footer_nav {
+        margin-left: -45px;
+    }
+    .footer_iner_list {
+        padding-left: 0;
+    }
+    .footer_social {
+        margin-left: -100px;
+    }
+}
